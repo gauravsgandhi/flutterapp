@@ -43,6 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                   style: const TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
+                    color: Colors.black,
                   ),
                 ),
                 const SizedBox(
@@ -57,6 +58,8 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: const InputDecoration(
                           hintText: "Enter username",
                           labelText: "Username",
+                          hintStyle: TextStyle(color: Colors.red),
+                          labelStyle: TextStyle(color: Colors.black),
                         ),
                         onChanged: (value) {
                           name = value;
@@ -75,6 +78,8 @@ class _LoginPageState extends State<LoginPage> {
                           decoration: const InputDecoration(
                             hintText: "Enter password",
                             labelText: "Password",
+                            hintStyle: TextStyle(color: Colors.red),
+                            labelStyle: TextStyle(color: Colors.black),
                           ),
                           validator: (value) {
                             if (value!.isEmpty) {
