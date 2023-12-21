@@ -7,7 +7,7 @@ class HomedetailsPage extends StatelessWidget {
   final Item catalog;
 
   const HomedetailsPage({Key? key, required this.catalog})
-      : assert(catalog != null),
+      :assert(catalog != null),
         super(key: key);
   @override
   Widget build(BuildContext context) {

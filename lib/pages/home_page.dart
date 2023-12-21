@@ -42,11 +42,11 @@ class _HomepageState extends State<Homepage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CatalogHeader(),
-                if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+                const CatalogHeader(),
+                if (CatalogModel.items.isNotEmpty)
                   const CatalogList().py16().expand()
                 else
-                  CircularProgressIndicator().centered().py16().expand(),
+                  const CircularProgressIndicator().centered().py16().expand(),
               ],
             ),
           ),

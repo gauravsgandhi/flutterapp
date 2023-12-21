@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -58,7 +59,8 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: const InputDecoration(
                           hintText: "Enter username",
                           labelText: "Username",
-                          hintStyle: TextStyle(color: Colors.red),
+                          hintStyle: TextStyle(color: Colors.black12,
+                          ),
                           labelStyle: TextStyle(color: Colors.black),
                         ),
                         onChanged: (value) {

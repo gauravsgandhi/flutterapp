@@ -5,7 +5,7 @@ import 'package:e_commerce_app/widgets/themes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: MyRoutes.loginRoute,
       routes: {
         "/": (context) => LoginPage(),
-        MyRoutes.homeRoute: (context) => Homepage(),
+        MyRoutes.homeRoute: (context) => const Homepage(),
         MyRoutes.loginRoute: (context) => LoginPage()
       },
       
